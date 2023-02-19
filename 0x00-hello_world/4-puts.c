@@ -1,4 +1,4 @@
-#include<std.h>
+#include<stdio.h>
 /*
  * writting c programme that print using
  * puts function

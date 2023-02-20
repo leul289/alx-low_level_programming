@@ -8,9 +8,12 @@ int main(void)
 {
 int a;
 a = 65;
-while                                    (a <= 90)
-{                                        putchar(a);
+while
+(a <= 122)
+{
+putchar(a);
 a++;
 }
 putchar('\n');
-return (0);                              }
+return (0);
+}

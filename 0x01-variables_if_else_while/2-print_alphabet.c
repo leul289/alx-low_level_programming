@@ -1,16 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdint.h>
 /**
  * main - intery point
  *
  * Return: 0
  */
 int main (void)
-int c;
-c = "a";
+int b;
+b = "a";
 while
-(c <= "z") {
-putchar(c);
-c++;
+(b <= "z") {
+putchar(b);
+b++;
 }
 putchar('\n');
 return (0);

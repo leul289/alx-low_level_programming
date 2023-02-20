@@ -1,23 +1,25 @@
 #include <stdio.h>
-/*
- * main - lower case with out e & q
+/***
+ * main - intery point
  *
- * Reaturn: 0
+ * Return: 0
  */
 int main(void)
 {
-int n = 97;
-while (n <= 122)
+int b;
+b = 97;
+while
+(b <= 122)
 {
-if (n == 101 || n == 113)
+if (b == 101 || b == 113)
 {
-n++;
+b++;
 continue;
 }
-putchar(n);
-n++;
-}
-putchar("\n");
-return(0);
+putchar(b);
+b++;
 }
 
+putchar('\n');
+return (0);
+}

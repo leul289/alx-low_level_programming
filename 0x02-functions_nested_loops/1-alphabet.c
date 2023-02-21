@@ -1,17 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - a function that prints the alphabet, in lowercase, and new line.
  *
  * Return: 0
  */
-int main(void)
+void print_alphabet(void);
 {
-	int a = 97;
+	char bet;
 
-	while (a <= 122)
+for (bet = 'a'; bet <= 'z'; bet++)
 	{
-		putchar(a);
-			a++;
+		_putchar(bet);
 	}
 putchar('\n');
 return (0);

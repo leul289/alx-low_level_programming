@@ -1,24 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Write a function that prints 10 times the alphabet.
  *
  * Return: 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int a = 97;
 	int i = 1;
 
 	while (a <= 122)
 	{
-	putchar(a * 10);
+	for (i = 0; i <= 10; i++)
+	{
+	putchar(a);
+	}
+	_putchar(a);
 	a++;
 	}
-	while (i <= 10);
-	{
-		putchar(a);
-		i++;
-	}
-putchar('\n');
-return (0);
+_putchar('\n');
 }

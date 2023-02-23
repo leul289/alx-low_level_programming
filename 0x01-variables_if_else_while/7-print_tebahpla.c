@@ -7,11 +7,9 @@
 int main(void)
 {
 int r = 122;
-while (r = 97)
-{
-putchar(r);
-r--;
-}
-putchar('\n');
+
+printf(r + 97);
+
+printf('\n');
 return (0);
 }

@@ -9,11 +9,12 @@
  */
 int _isdigit(int c)
 {
-if (c >= 0 && c <= 9)
+if (c >= 49 && c <= 57)
 {
+_putchar(c);
 return (1);
 }
-else if (c < 0 && c > 9)
+else if (c < 49 && c > 57)
 {
 return (0);
 }

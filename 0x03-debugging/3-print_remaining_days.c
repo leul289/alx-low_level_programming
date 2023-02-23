@@ -4,33 +4,33 @@
  * print_remaining_days - takes a date and prints how many days are
  * left in the year, taking leap years into account
  *
- * @m - month as an integer
- * @d - day as an integer
- * @y - year as an integer
+ * @month: month in number fromat
+ * @day: day of month
+ * @year: year
  *
  * Return: 0
  */
-void print_remaining_days(int m, int d, int y)
+void print_remaining_days(int month, int day, int year)
 {
-if ((y % 100 == 0 && y % 400 == 0) || (y % 4 == 0))
+if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 {
-if (m > 2 && d >= 60)
+if (month > 2 && day >= 60)
 {
-d++;
+day++;
 }
-printf("day of year: %d\n", d);
-printf("remaining day: %d\n", 366 - d);
-}
-else
-{
-if (m == 2 && d == 60)
-{
-printf("Invalid date: %02d/%02d/%04d\n", m, d - 31, y);
+printf("day of year: %d\n", day);
+printf("remaining day: %d\n", 366 - day);
 }
 else
 {
-printf("day of the year: %d\n", d);
-printf("remaining day: %d\n", 366 - d);
+if (month == 2 && day == 60)
+{
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+}
+else
+{
+printf("day of the year: %d\n", day);
+printf("remaining day: %d\n", 366 - day);
 }
 }
 }

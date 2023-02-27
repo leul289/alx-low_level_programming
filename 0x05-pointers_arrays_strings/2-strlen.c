@@ -9,8 +9,9 @@ int _strlen(char *s)
 
 int longi = 0;
 
-for (;longi++ ;)
+while (longi != '\0')
 {
+longi++;
 s++;
 }
 return (longi);

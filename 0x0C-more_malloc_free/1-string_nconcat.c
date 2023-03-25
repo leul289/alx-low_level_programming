@@ -20,6 +20,11 @@ while (s1 && s1[len1])
 while (s2 && s2[len2])
 	len2++;
 
+if (n < len2)
+	s = malloc(sizeof(char) * (len1 + n + 1));
+else
+	s = malloc(sizeof(char) * (lan1 + lan2 + 1));
+
 if (!s)
 	return (NULL);
 
